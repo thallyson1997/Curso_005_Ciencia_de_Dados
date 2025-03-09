@@ -32,4 +32,11 @@ df['Preço'] = preco
 
 #Adicione a venda
 df['Venda'] = df['Preço'] * 1.4
-print(df)
+
+#Somando os valores
+total_quantidade = sum(df['Quantidade'])
+total_preco = sum(df['Preço'])
+total_venda = sum(df['Venda'])
+print(total_quantidade)
+print(f'R$ {total_preco:.2f}')
+print(f'R$ {total_venda:.2f}')
